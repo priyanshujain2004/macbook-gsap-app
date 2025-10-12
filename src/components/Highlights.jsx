@@ -9,7 +9,7 @@ const Highlights = () => {
     gsap.to([".left-column", ".right-column"], {
       scrollTrigger: {
         trigger: "#highlights",
-        start: isMobile ? "bottom bottom" : "top top",
+        start: isMobile ? "bottom bottom" : "top center",
       },
       y: 0,
       opacity: 1,
