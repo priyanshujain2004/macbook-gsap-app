@@ -1,23 +1,31 @@
-import Navbar from "./components/Navbar.jsx";
+import NavBar from "./components/NavBar.jsx";
 import Hero from "./components/Hero.jsx";
-import ProductViewer from './components/ProductViewer.jsx';
-import Showcase from './components/Showcase.jsx';
-import gsap from 'gsap';
-import { ScrollTrigger, SplitText } from 'gsap/all';
-import { Analytics } from "@vercel/analytics/react"
+import ProductViewer from "./components/ProductViewer.jsx";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+import Showcase from "./components/Showcase.jsx";
+import Performance from "./components/Performance.jsx";
+import Features from "./components/Features.jsx";
+import Highlights from "./components/Highlights.jsx";
+import Footer from "./components/Footer.jsx";
+import { Analytics } from "@vercel/analytics/react";
 
-gsap.registerPlugin(ScrollTrigger, SplitText)
+gsap.registerPlugin(ScrollTrigger);
 
 const App = () => {
-    return (
-        <main>
-            <Navbar />
-            <Hero />
-            <ProductViewer />
-            <Showcase />
-            <Analytics />
-        </main>
-    )
-}
-export default App
+  return (
+    <main>
+      <NavBar />
+      <Hero />
+      <ProductViewer />
+      <Showcase />
+      <Performance />
+      <Features />
+      <Highlights />
+      <Footer />
+      <Analytics />
+    </main>
+  );
+};
 
+export default App;
