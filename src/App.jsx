@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar.jsx";
 import Hero from "./components/Hero.jsx";
 import ProductViewer from './components/ProductViewer.jsx';
+import Showcase from './components/Showcase.jsx';
 import gsap from 'gsap';
 import { ScrollTrigger, SplitText } from 'gsap/all';
 import { Analytics } from "@vercel/analytics/react"
@@ -13,6 +14,7 @@ const App = () => {
             <Navbar />
             <Hero />
             <ProductViewer />
+            <Showcase />
             <Analytics />
         </main>
     )
